@@ -1,0 +1,14 @@
+
+\.DS_Store
+
+bower_components/sugar/release/
+
+bower_components/bootstrap/
+
+bower_components/jquery-validation/
+
+bower_components/jquery/
+
+bower_components/jquerymy/
+
+bower_components/sugar/

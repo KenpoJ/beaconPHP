@@ -1,0 +1,144 @@
+/*----- VARIABLES -----*/
+@primary: #269;
+@secondary: #CCC;
+
+@footerHeight: 10rem;
+
+
+/*----- MIXINS -----*/
+@import "less_mixins.less";
+
+
+/*----- FONTS -----*/
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 1.25em;
+	color: @primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 200;
+	small {
+		color: inherit;
+	}
+}
+
+
+/*----- LAYOUT -----*/
+.content-container {
+	min-height: 70vh;
+}
+header {
+	text-align: center;
+	color: #FFF;
+	background: @primary;
+}
+
+section {
+	margin-top: 5rem;
+	padding: 1.5rem;
+	overflow-y: auto;
+	border: 1px solid @primary;
+	.border-radius(5px);
+
+	h2 {
+		margin-top: 0;
+	}
+}
+
+footer {
+	margin-top: 5rem;
+	height: @footerHeight;
+	background: @secondary;
+}
+
+.btn {
+	color: inherit;
+}
+
+#jar-dist {
+	table {
+		th, td {
+			width: 33%;
+			text-align: center;
+		}
+		td:first-child {
+			padding-left: 3rem;
+			font-weight: bold;
+			text-align: left;
+
+			small {
+				font-weight: 200;
+				letter-spacing: .15em;
+			}
+		}
+	}
+}
+
+
+/*----- FORMS -----*/
+form {
+	label {
+		margin: 2rem 0 1rem 0;
+	}
+	.row {
+		margin: 0;
+		padding: 0;
+	}
+}
+.form-control {
+	margin: 0 auto;
+	font-size: 28px; /*Double 14px body size*/
+	font-weight: 200;
+	line-height: 100%;
+	border: 1px solid @primary -#333;
+	box-shadow: none;
+}
+.form-control {
+	&:focus {
+		border: none;
+	}
+}
+label {
+	width: 100%;
+	text-align: center;
+}
+
+.expense-container {
+	overflow: auto;
+}
+
+#income {
+	.form-control {
+		max-width: 50%;
+	}
+}
+
+.total-net-income {
+	font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/*----- FORM HELPER STYLES -----*/
+.help {
+	float: right;
+}
+
+
+/*----- HELPER CLASSES ------*/
+.clear {
+	clear: both;
+}
+
+
+/*----- RESPONSIVE ADJUSTMENTS -----*/
+
+@media only screen and (max-width: 480px) {
+
+}
